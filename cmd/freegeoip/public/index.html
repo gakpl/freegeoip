@@ -92,33 +92,13 @@ angular.module("freegeoip", [function($locationProvider) {
 		<div class="col-sm-6 text-justify">
 			<h4>About</h4>
 			<p>
-			<a href="http://freegeoip.net">freegeoip.net</a>
-			provides a public HTTP API for software developers
+			Provides a public HTTP API for software developers
 			to search the geolocation of IP addresses. It uses
 			a database of IP addresses that are associated to
 			cities along with other relevant information like
 			time zone, latitude and longitude.
 			</p>
 
-			<p>
-			You're allowed up to <big>10,000</big> queries per
-			hour by default. Once this limit is reached, all of
-			your requests will result in HTTP 403, forbidden,
-			until your quota is cleared.
-			</p>
-
-			<p>
-			The freegeoip web server is free and open source so
-			if the public service limit is a problem for you,
-			download it and run your own instance.
-			</p>
-
-			<br/>
-
-			<p class="text-center">
-				<a href="https://github.com/fiorix/freegeoip/releases/" class="btn btn-primary" target="_blank">Download</a>
-				<a href="https://github.com/fiorix/freegeoip" class="btn btn-primary" target="_blank">GitHub project</a>
-			</p>
 		</div>
 
 		<div class="col-sm-6" ng-controller="queryController">
@@ -178,28 +158,6 @@ angular.module("freegeoip", [function($locationProvider) {
 
 	<hr>
 
-	<div class="row">
-		<div class="col-sm-6">
-			<h4>Support</h4>
-			<p>
-			<a href="http://freegeoip.net">freegeoip.net</a> is
-			community funded, therefore consider donating if you
-			use and like it. For any other inquiries or feedback,
-			<a href="https://github.com/fiorix/" target="_blank">contact me</a>
-			directly.
-			</p>
-		</div>
-		<div class="col-sm-6 donate">
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			</form>
-		</div>
-	</div> <!-- /row -->
-
-	<hr>
 
 	<h4>API</h4>
 
@@ -256,17 +214,5 @@ angular.module("freegeoip", [function($locationProvider) {
 		</small>
 	</footer>
 </div><!-- /.container -->
-
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-10475047-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-</script>
 </body>
 </html>
